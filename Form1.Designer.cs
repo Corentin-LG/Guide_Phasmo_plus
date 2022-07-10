@@ -1041,5 +1041,287 @@ namespace Guide_Phasmo_plus
             //ajouter static au besoin dans la def de la fonction
             return (string)src.GetType().GetProperty(propName).Name;
         }
+        public void grand_changement(object btn_clicker)
+        {
+            //if (Color.FromKnownColor(KnownColor.ControlLight).ToArgb().Equals((btn_clicker as Control).BackColor.ToArgb()))
+            //{
+            //    (btn_clicker as Control).BackColor = Color.FromKnownColor(KnownColor.MenuHighlight);
+            //    changer_couleur_btn2((btn_clicker as Control).Name.Replace("_button", ""), Color.FromKnownColor(KnownColor.ControlLight).ToArgb());
+            //}
+            //else if (Color.FromKnownColor(KnownColor.MenuHighlight).ToArgb().Equals((btn_clicker as Control).BackColor.ToArgb()))
+            //{
+            //    (btn_clicker as Control).BackColor = Color.FromKnownColor(KnownColor.GrayText);
+            //    changer_couleur_btn2((btn_clicker as Control).Name.Replace("_button", ""), Color.FromKnownColor(KnownColor.ControlLight).ToArgb());
+            //}
+            //else if (Color.FromKnownColor(KnownColor.GrayText).ToArgb().Equals((btn_clicker as Control).BackColor.ToArgb()))
+            //{
+            //    (btn_clicker as Control).BackColor = Color.FromKnownColor(KnownColor.ControlLight);
+            //    changer_couleur_btn2((btn_clicker as Control).Name.Replace("_button", ""), Color.FromKnownColor(KnownColor.ControlLight).ToArgb());
+            //}
+        }
+        //public void changer_couleur_btn2(string preuve, int couleur_preuve)
+        //{
+        //    //foreach (Entite entite in Liste_des_Entites)
+        //    //{
+        //    //    if ((bool)entite.GetType().GetProperty(preuve).GetValue(entite, null))
+        //    //    {
+        //    //        foreach (Button btn_entite in Table_des_entites.Controls)
+        //    //        {
+        //    //            if ((string)btn_entite.Name.Replace("_button", "") == (string)entite.Name)
+        //    //            {
+        //    //                (btn_entite as Control).BackColor = Color.FromKnownColor(KnownColor.MenuHighlight);
+        //    //            }
+        //    //        }
+        //    //    }
+        //    //    else
+        //    //    {
+
+        //    //    }
+        //    //}
+
+        //    //foreach (Button btn_entite in Table_des_entites.Controls)
+        //    //{
+        //    //    if ((bool)entite.GetType().GetProperty(preuve).GetValue(entite, null))
+        //    //    {
+        //    //        foreach (Entite entite in Liste_des_Entites)
+        //    //        {
+        //    //            if ((string)btn_entite.Name.Replace("_button", "") == (string)entite.Name)
+        //    //            {
+        //    //                (btn_entite as Control).BackColor = Color.FromKnownColor(KnownColor.MenuHighlight);
+        //    //            }
+        //    //        }
+        //    //    }
+        //    //    else
+        //    //    {
+
+        //    //    }
+        //    //}
+        //    int nbr_bleu = 0;
+        //    foreach(Button btn_preuve in Tables_des_preuves.Controls)
+        //    {
+        //        if (Color.FromKnownColor(KnownColor.MenuHighlight).ToArgb().Equals(btn_preuve.BackColor.ToArgb())) { nbr_bleu++; }
+        //    }
+        //    if (nbr_bleu == 0)
+        //    {
+        //        foreach (Button btn_entite in Table_des_entites.Controls)
+        //            if (Color.FromKnownColor(KnownColor.ControlLight).ToArgb().Equals((btn_clicker as Control).BackColor.ToArgb()))
+        //            {
+        //                (btn_clicker as Control).BackColor = Color.FromKnownColor(KnownColor.MenuHighlight);
+        //                changer_couleur_btn2((btn_clicker as Control).Name.Replace("_button", ""), Color.FromKnownColor(KnownColor.ControlLight).ToArgb());
+        //            }
+        //            else if (Color.FromKnownColor(KnownColor.MenuHighlight).ToArgb().Equals((btn_clicker as Control).BackColor.ToArgb()))
+        //            {
+        //                (btn_clicker as Control).BackColor = Color.FromKnownColor(KnownColor.GrayText);
+        //                changer_couleur_btn2((btn_clicker as Control).Name.Replace("_button", ""), Color.FromKnownColor(KnownColor.ControlLight).ToArgb());
+        //            }
+        //            else if (Color.FromKnownColor(KnownColor.GrayText).ToArgb().Equals((btn_clicker as Control).BackColor.ToArgb()))
+        //            {
+        //                (btn_clicker as Control).BackColor = Color.FromKnownColor(KnownColor.ControlLight);
+        //                changer_couleur_btn2((btn_clicker as Control).Name.Replace("_button", ""), Color.FromKnownColor(KnownColor.ControlLight).ToArgb());
+        //            }
+        //    }
+        //    else
+        //    {
+
+        //    }
+        //}
+        public void changer_couleur_btn3(object btn_clicker)
+        {
+            //string preuve = (btn_clicker as Control).Name.Replace("_button", "");
+            //foreach (Entite entite in Liste_des_Entites)
+            //{
+            //    if ((bool)entite.GetType().GetProperty(preuve).GetValue(entite, null))
+            //    {
+            //        foreach (Button btn_entite in Table_des_entites.Controls)
+            //        {
+            //            if ((string)btn_entite.Name.Replace("_button", "") == (string)entite.Name)
+            //            {
+            //                (btn_entite as Control).BackColor = Color.FromKnownColor(KnownColor.MenuHighlight);
+            //            }
+            //        }
+            //    }
+            //    else
+            //    {
+
+            //    }
+            //}
+
+            //foreach (Button btn_entite in Table_des_entites.Controls)
+            //{
+            //    if ((bool)entite.GetType().GetProperty(preuve).GetValue(entite, null))
+            //    {
+            //        foreach (Entite entite in Liste_des_Entites)
+            //        {
+            //            if ((string)btn_entite.Name.Replace("_button", "") == (string)entite.Name)
+            //            {
+            //                (btn_entite as Control).BackColor = Color.FromKnownColor(KnownColor.MenuHighlight);
+            //            }
+            //        }
+            //    }
+            //    else
+            //    {
+
+            //    }
+            //}
+
+
+            if (Color.FromKnownColor(KnownColor.ControlLight).ToArgb().Equals((btn_clicker as Control).BackColor.ToArgb()))
+            {
+                (btn_clicker as Control).BackColor = Color.FromKnownColor(KnownColor.MenuHighlight);
+            }
+            else if (Color.FromKnownColor(KnownColor.MenuHighlight).ToArgb().Equals((btn_clicker as Control).BackColor.ToArgb()))
+            {
+                (btn_clicker as Control).BackColor = Color.FromKnownColor(KnownColor.GrayText);
+            }
+            else if (Color.FromKnownColor(KnownColor.GrayText).ToArgb().Equals((btn_clicker as Control).BackColor.ToArgb()))
+            {
+                (btn_clicker as Control).BackColor = Color.FromKnownColor(KnownColor.ControlLight);
+            }
+
+            //int nbr_bleu = 0;
+            //foreach (Button btn_preuve in Tables_des_preuves.Controls)
+            //{
+            //    if (Color.FromKnownColor(KnownColor.MenuHighlight).ToArgb().Equals(btn_preuve.BackColor.ToArgb())) { nbr_bleu++; }
+            //}
+            //int nbr_gris = 0;
+            //foreach (Button btn_preuve in Tables_des_preuves.Controls)
+            //{
+            //    if (Color.FromKnownColor(KnownColor.GrayText).ToArgb().Equals(btn_preuve.BackColor.ToArgb())) { nbr_gris++; }
+            //}
+            //int nbr_blanc = 0;
+            //foreach (Button btn_preuve in Tables_des_preuves.Controls)
+            //{
+            //    if (Color.FromKnownColor(KnownColor.ControlLight).ToArgb().Equals(btn_preuve.BackColor.ToArgb())) { nbr_blanc++; }
+            //}
+
+            //if (nbr_bleu == 0)
+            //{
+            //    foreach (Button btn_entite in Table_des_entites.Controls)
+            //    {
+            //        if (Color.FromKnownColor(KnownColor.MenuHighlight).ToArgb().Equals(btn_entite.BackColor.ToArgb())) 
+            //        {
+            //            btn_entite.BackColor = Color.FromKnownColor(KnownColor.ControlLight);
+            //        }
+            //    }
+            //}
+            //else if (nbr_gris == 0)
+            //{
+            //    foreach (Button btn_entite in Table_des_entites.Controls)
+            //    {
+            //        if (Color.FromKnownColor(KnownColor.GrayText).ToArgb().Equals(btn_entite.BackColor.ToArgb()))
+            //        {
+            //            btn_entite.BackColor = Color.FromKnownColor(KnownColor.ControlLight);
+            //        }
+            //    }
+            //}
+            //else if(nbr_blanc == 0)
+            //{
+            //    foreach (Button btn_entite in Table_des_entites.Controls)
+            //    {
+            //        if (Color.FromKnownColor(KnownColor.ControlLight).ToArgb().Equals(btn_entite.BackColor.ToArgb()))
+            //        {
+            //            btn_entite.BackColor = Color.FromKnownColor(KnownColor.GrayText);
+            //        }
+            //    }
+            //}
+            //else
+            //{
+
+            //}
+            //foreach (Button btn_preuve in Tables_des_preuves.Controls)
+            //{
+            //    if (Color.FromKnownColor(KnownColor.MenuHighlight).ToArgb().Equals(btn_preuve.BackColor.ToArgb()))
+            //    {
+            //        foreach (Button btn_entite in Table_des_entites.Controls)
+            //        {
+            //            if (Color.FromKnownColor(KnownColor.ControlLight).ToArgb().Equals(btn_entite.BackColor.ToArgb()))
+            //            {
+            //                btn_entite.BackColor = Color.FromKnownColor(KnownColor.MenuHighlight);
+            //            }
+            //            else if (Color.FromKnownColor(KnownColor.MenuHighlight).ToArgb().Equals(btn_entite.BackColor.ToArgb()) && 1==1) //la preuve est fausse et que lentite est bleu
+            //            {
+            //                btn_entite.BackColor = Color.FromKnownColor(KnownColor.GrayText);
+            //            }
+            //        }
+            //    }
+            //}
+
+            foreach (Button preuve_btn in Tables_des_preuves.Controls)
+            {
+                if (Color.FromKnownColor(KnownColor.ControlLight).ToArgb().Equals(preuve_btn.BackColor.ToArgb()))
+                {
+                    foreach (Button entite_btn in Table_des_entites.Controls)
+                    {
+                        //liste_entite.Items.Add((bool)entite.GetType().GetProperty(preuve).GetValue(entite, null));
+                        //liste_entite.Items.Add(Liste_des_Entites.GetType().GetProperty(entite_btn.Name).GetType().GetProperty(preuve_btn.Name.Replace("_button", "")));
+                        //Liste_des_Entites.GetType().GetProperty(entite_btn.Name).GetType().GetProperty(preuve_btn.Name.Replace("_button", ""));
+
+                        //liste_entite.Items.Add(Liste_des_Entites.GetType().GetProperty(entite_btn.Name).GetValue(Liste_des_Entites, null));
+                        //liste_entite.Items.Add(Liste_des_Entites.IndexOf( Esprit );
+                        string interm1 = entite_btn.Name.Replace("_button", "");
+                        string interm2 = preuve_btn.Name.Replace("_button", "");
+                        foreach (Entite entite_instance in Liste_des_Entites)
+                        {
+                            if(entite_instance.Name == interm1)
+                            {
+                                if(((bool)entite_instance.GetType().GetProperty(interm2).GetValue(entite_instance, null)))
+                                {
+                                    entite_btn.BackColor = Color.FromKnownColor(KnownColor.ControlLight);
+                                }
+                            }
+                        }
+                        //Nom preuve
+                        //preuve_btn.Name.Replace("_button", "")
+
+                        // Liste_des_Entites.GetType().GetProperty(entite_btn.Name.Replace("_button", "")))
+                    }
+                }
+            }
+
+            foreach (Button preuve_btn in Tables_des_preuves.Controls)
+            {
+                if (Color.FromKnownColor(KnownColor.MenuHighlight).ToArgb().Equals(preuve_btn.BackColor.ToArgb()))
+                {
+                    foreach (Button entite_btn in Table_des_entites.Controls)
+                    {
+                        string interm1 = entite_btn.Name.Replace("_button", "");
+                        string interm2 = preuve_btn.Name.Replace("_button", "");
+                        foreach (Entite entite_instance in Liste_des_Entites)
+                        {
+                            if (entite_instance.Name == interm1)
+                            {
+                                if (((bool)entite_instance.GetType().GetProperty(interm2).GetValue(entite_instance, null)))
+                                {
+                                    entite_btn.BackColor = Color.FromKnownColor(KnownColor.MenuHighlight);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            foreach (Button preuve_btn in Tables_des_preuves.Controls)
+            {
+                if (Color.FromKnownColor(KnownColor.GrayText).ToArgb().Equals(preuve_btn.BackColor.ToArgb()))
+                {
+                    foreach (Button entite_btn in Table_des_entites.Controls)
+                    {
+                        string interm1 = entite_btn.Name.Replace("_button", "");
+                        string interm2 = preuve_btn.Name.Replace("_button", "");
+                        foreach (Entite entite_instance in Liste_des_Entites)
+                        {
+                            if (entite_instance.Name == interm1)
+                            {
+                                if (((bool)entite_instance.GetType().GetProperty(interm2).GetValue(entite_instance, null)))
+                                {
+                                    entite_btn.BackColor = Color.FromKnownColor(KnownColor.GrayText);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
     }
 }
