@@ -47,21 +47,23 @@ namespace Guide_Phasmo_plus
 
         private void Preuve_Click(object sender, EventArgs e)
         {
-            if (Color.FromKnownColor(KnownColor.ControlLight).ToArgb().Equals((sender as Control).BackColor.ToArgb()))
-            {
-                (sender as Control).BackColor = Color.FromKnownColor(KnownColor.MenuHighlight);
-                changer_couleur_btn((sender as Control).Name.Replace("_button", ""));
-            }
-            else if (Color.FromKnownColor(KnownColor.MenuHighlight).ToArgb().Equals((sender as Control).BackColor.ToArgb()))
-            {
-                (sender as Control).BackColor = Color.FromKnownColor(KnownColor.GrayText);
-                changer_couleur_btn((sender as Control).Name.Replace("_button", ""));
-            }
-            else if (Color.FromKnownColor(KnownColor.GrayText).ToArgb().Equals((sender as Control).BackColor.ToArgb()))
-            {
-                (sender as Control).BackColor = Color.FromKnownColor(KnownColor.ControlLight);
-                changer_couleur_btn((sender as Control).Name.Replace("_button", ""));
-            }
+            //if (Color.FromKnownColor(KnownColor.ControlLight).ToArgb().Equals((sender as Control).BackColor.ToArgb()))
+            //{
+            //    (sender as Control).BackColor = Color.FromKnownColor(KnownColor.MenuHighlight);
+            //    changer_couleur_btn((sender as Control).Name.Replace("_button", ""));
+            //}
+            //else if (Color.FromKnownColor(KnownColor.MenuHighlight).ToArgb().Equals((sender as Control).BackColor.ToArgb()))
+            //{
+            //    (sender as Control).BackColor = Color.FromKnownColor(KnownColor.GrayText);
+            //    changer_couleur_btn((sender as Control).Name.Replace("_button", ""));
+            //}
+            //else if (Color.FromKnownColor(KnownColor.GrayText).ToArgb().Equals((sender as Control).BackColor.ToArgb()))
+            //{
+            //    (sender as Control).BackColor = Color.FromKnownColor(KnownColor.ControlLight);
+            //    changer_couleur_btn((sender as Control).Name.Replace("_button", ""));
+            //}
+            //grand_changement(sender);
+            changer_couleur_btn3(sender);
         }
 
         private void Afficher_infos_entite_button_Click(object sender, EventArgs e)
