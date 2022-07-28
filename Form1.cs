@@ -72,5 +72,15 @@ namespace Guide_Phasmo_plus
             test_label.Text = nom_du_btn;
             afficher_attributs_entite(nom_du_btn);
         }
+
+        private void liste_entite_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Reboot_button_Click(object sender, EventArgs e)
+        {
+            reboot_couleur();
+        }
     }
 }
