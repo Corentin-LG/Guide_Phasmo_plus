@@ -642,6 +642,7 @@ namespace Guide_Phasmo_plus
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Fenetre_application_phasmo_plus
             // 
@@ -1172,6 +1173,24 @@ namespace Guide_Phasmo_plus
             }
         }
 
-        
+        public void credits_corentin_legoff()
+        {
+            //liste_tips.Items.Clear();
+            //liste_tips.Items.Add("Producteur : Kurumo Interactive(All rights reserved)");
+            //liste_tips.Items.Add("Chef de projet : Corentin Le Goff");
+            //liste_tips.Items.Add("Programeur : Corentin Le Goff");
+            //liste_tips.Items.Add("Designer : Corentin Le Goff");
+            //liste_tips.Items.Add("Pseudonyme : Kurumo");
+            //liste_entite.Items.Clear();
+            //liste_entite.Items.Add("Merci pour votre utilisation de : ");
+            //liste_entite.Items.Add(this.Name);
+            MessageBox.Show("- Producteur : Kurumo Interactive (All rights reserved) \r\n" +
+                "- Chef de projet : Corentin Le Goff \r\n" +
+                "- Programeur : Corentin Le Goff \r\n" +
+                "- Designer : Corentin Le Goff \r\n" +
+                "- Pseudonyme : Kurumo \r\n" +
+                "- Merci pour votre utilisation de : \r\n" +
+                "- " + this.Text);
+        }
     }
 }
