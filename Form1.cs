@@ -75,5 +75,10 @@ namespace Guide_Phasmo_plus
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            credits_corentin_legoff();
+        }
     }
 }
