@@ -2,7 +2,7 @@
 
 namespace Guide_Phasmo_plus
 {
-    partial class Form1
+    partial class Fenetre_application_phasmo_plus
     {
         /// <summary>
         ///  Required designer variable.
@@ -30,7 +30,7 @@ namespace Guide_Phasmo_plus
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Fenetre_application_phasmo_plus));
             this.Tables_des_preuves = new System.Windows.Forms.TableLayoutPanel();
             this.Reboot_button = new System.Windows.Forms.Button();
             this.Temperature_button = new System.Windows.Forms.Button();
@@ -67,18 +67,18 @@ namespace Guide_Phasmo_plus
             this.Esprit_button = new System.Windows.Forms.Button();
             this.cooldown_domain = new System.Windows.Forms.DomainUpDown();
             this.liste_c = new System.Windows.Forms.ListBox();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.liste_cooldown_seuil = new System.Windows.Forms.TableLayoutPanel();
             this.liste_s = new System.Windows.Forms.ListBox();
             this.seuil_domain = new System.Windows.Forms.DomainUpDown();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.liste_infos_tips = new System.Windows.Forms.TableLayoutPanel();
             this.liste_tips = new System.Windows.Forms.ListBox();
             this.liste_entite = new System.Windows.Forms.ListBox();
-            this.test_label = new System.Windows.Forms.Label();
-            this.truc = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Tables_des_preuves.SuspendLayout();
             this.Table_des_entites.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
+            this.liste_cooldown_seuil.SuspendLayout();
+            this.liste_infos_tips.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Tables_des_preuves
@@ -249,10 +249,9 @@ namespace Guide_Phasmo_plus
             // 
             this.Moroi_button.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Moroi_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Moroi_button.Location = new System.Drawing.Point(0, 392);
-            this.Moroi_button.Margin = new System.Windows.Forms.Padding(0);
+            this.Moroi_button.Location = new System.Drawing.Point(3, 395);
             this.Moroi_button.Name = "Moroi_button";
-            this.Moroi_button.Size = new System.Drawing.Size(99, 58);
+            this.Moroi_button.Size = new System.Drawing.Size(93, 52);
             this.Moroi_button.TabIndex = 24;
             this.Moroi_button.Text = "Moroï";
             this.Moroi_button.UseVisualStyleBackColor = false;
@@ -262,10 +261,9 @@ namespace Guide_Phasmo_plus
             // 
             this.Deogen_button.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Deogen_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Deogen_button.Location = new System.Drawing.Point(99, 392);
-            this.Deogen_button.Margin = new System.Windows.Forms.Padding(0);
+            this.Deogen_button.Location = new System.Drawing.Point(102, 395);
             this.Deogen_button.Name = "Deogen_button";
-            this.Deogen_button.Size = new System.Drawing.Size(100, 58);
+            this.Deogen_button.Size = new System.Drawing.Size(94, 52);
             this.Deogen_button.TabIndex = 23;
             this.Deogen_button.Text = "Deogen";
             this.Deogen_button.UseVisualStyleBackColor = false;
@@ -275,10 +273,9 @@ namespace Guide_Phasmo_plus
             // 
             this.Thaye_button.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Thaye_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Thaye_button.Location = new System.Drawing.Point(199, 392);
-            this.Thaye_button.Margin = new System.Windows.Forms.Padding(0);
+            this.Thaye_button.Location = new System.Drawing.Point(202, 395);
             this.Thaye_button.Name = "Thaye_button";
-            this.Thaye_button.Size = new System.Drawing.Size(101, 58);
+            this.Thaye_button.Size = new System.Drawing.Size(95, 52);
             this.Thaye_button.TabIndex = 22;
             this.Thaye_button.Text = "Thayé";
             this.Thaye_button.UseVisualStyleBackColor = false;
@@ -288,10 +285,9 @@ namespace Guide_Phasmo_plus
             // 
             this.Fantome_button.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Fantome_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Fantome_button.Location = new System.Drawing.Point(199, 0);
-            this.Fantome_button.Margin = new System.Windows.Forms.Padding(0);
+            this.Fantome_button.Location = new System.Drawing.Point(202, 3);
             this.Fantome_button.Name = "Fantome_button";
-            this.Fantome_button.Size = new System.Drawing.Size(101, 56);
+            this.Fantome_button.Size = new System.Drawing.Size(95, 50);
             this.Fantome_button.TabIndex = 21;
             this.Fantome_button.Text = "Fantôme";
             this.Fantome_button.UseVisualStyleBackColor = false;
@@ -301,10 +297,9 @@ namespace Guide_Phasmo_plus
             // 
             this.Mimic_button.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Mimic_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Mimic_button.Location = new System.Drawing.Point(199, 336);
-            this.Mimic_button.Margin = new System.Windows.Forms.Padding(0);
+            this.Mimic_button.Location = new System.Drawing.Point(202, 339);
             this.Mimic_button.Name = "Mimic_button";
-            this.Mimic_button.Size = new System.Drawing.Size(101, 56);
+            this.Mimic_button.Size = new System.Drawing.Size(95, 50);
             this.Mimic_button.TabIndex = 20;
             this.Mimic_button.Text = "Le Mimic";
             this.Mimic_button.UseVisualStyleBackColor = false;
@@ -314,10 +309,9 @@ namespace Guide_Phasmo_plus
             // 
             this.Obake_button.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Obake_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Obake_button.Location = new System.Drawing.Point(99, 336);
-            this.Obake_button.Margin = new System.Windows.Forms.Padding(0);
+            this.Obake_button.Location = new System.Drawing.Point(102, 339);
             this.Obake_button.Name = "Obake_button";
-            this.Obake_button.Size = new System.Drawing.Size(100, 56);
+            this.Obake_button.Size = new System.Drawing.Size(94, 50);
             this.Obake_button.TabIndex = 19;
             this.Obake_button.Text = "Obake";
             this.Obake_button.UseVisualStyleBackColor = false;
@@ -327,10 +321,9 @@ namespace Guide_Phasmo_plus
             // 
             this.Raiju_button.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Raiju_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Raiju_button.Location = new System.Drawing.Point(0, 336);
-            this.Raiju_button.Margin = new System.Windows.Forms.Padding(0);
+            this.Raiju_button.Location = new System.Drawing.Point(3, 339);
             this.Raiju_button.Name = "Raiju_button";
-            this.Raiju_button.Size = new System.Drawing.Size(99, 56);
+            this.Raiju_button.Size = new System.Drawing.Size(93, 50);
             this.Raiju_button.TabIndex = 18;
             this.Raiju_button.Text = "Raiju";
             this.Raiju_button.UseVisualStyleBackColor = false;
@@ -340,10 +333,9 @@ namespace Guide_Phasmo_plus
             // 
             this.Jumeaux_button.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Jumeaux_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Jumeaux_button.Location = new System.Drawing.Point(199, 280);
-            this.Jumeaux_button.Margin = new System.Windows.Forms.Padding(0);
+            this.Jumeaux_button.Location = new System.Drawing.Point(202, 283);
             this.Jumeaux_button.Name = "Jumeaux_button";
-            this.Jumeaux_button.Size = new System.Drawing.Size(101, 56);
+            this.Jumeaux_button.Size = new System.Drawing.Size(95, 50);
             this.Jumeaux_button.TabIndex = 17;
             this.Jumeaux_button.Text = "Les Jumeaux";
             this.Jumeaux_button.UseVisualStyleBackColor = false;
@@ -353,10 +345,9 @@ namespace Guide_Phasmo_plus
             // 
             this.Onryo_button.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Onryo_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Onryo_button.Location = new System.Drawing.Point(99, 280);
-            this.Onryo_button.Margin = new System.Windows.Forms.Padding(0);
+            this.Onryo_button.Location = new System.Drawing.Point(102, 283);
             this.Onryo_button.Name = "Onryo_button";
-            this.Onryo_button.Size = new System.Drawing.Size(100, 56);
+            this.Onryo_button.Size = new System.Drawing.Size(94, 50);
             this.Onryo_button.TabIndex = 16;
             this.Onryo_button.Text = "Onryo";
             this.Onryo_button.UseVisualStyleBackColor = false;
@@ -366,10 +357,9 @@ namespace Guide_Phasmo_plus
             // 
             this.Myling_button.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Myling_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Myling_button.Location = new System.Drawing.Point(0, 280);
-            this.Myling_button.Margin = new System.Windows.Forms.Padding(0);
+            this.Myling_button.Location = new System.Drawing.Point(3, 283);
             this.Myling_button.Name = "Myling_button";
-            this.Myling_button.Size = new System.Drawing.Size(99, 56);
+            this.Myling_button.Size = new System.Drawing.Size(93, 50);
             this.Myling_button.TabIndex = 15;
             this.Myling_button.Text = "Myling";
             this.Myling_button.UseVisualStyleBackColor = false;
@@ -379,10 +369,9 @@ namespace Guide_Phasmo_plus
             // 
             this.Goryo_button.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Goryo_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Goryo_button.Location = new System.Drawing.Point(199, 224);
-            this.Goryo_button.Margin = new System.Windows.Forms.Padding(0);
+            this.Goryo_button.Location = new System.Drawing.Point(202, 227);
             this.Goryo_button.Name = "Goryo_button";
-            this.Goryo_button.Size = new System.Drawing.Size(101, 56);
+            this.Goryo_button.Size = new System.Drawing.Size(95, 50);
             this.Goryo_button.TabIndex = 14;
             this.Goryo_button.Text = "Goryo";
             this.Goryo_button.UseVisualStyleBackColor = false;
@@ -392,10 +381,9 @@ namespace Guide_Phasmo_plus
             // 
             this.Hantu_button.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Hantu_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Hantu_button.Location = new System.Drawing.Point(99, 224);
-            this.Hantu_button.Margin = new System.Windows.Forms.Padding(0);
+            this.Hantu_button.Location = new System.Drawing.Point(102, 227);
             this.Hantu_button.Name = "Hantu_button";
-            this.Hantu_button.Size = new System.Drawing.Size(100, 56);
+            this.Hantu_button.Size = new System.Drawing.Size(94, 50);
             this.Hantu_button.TabIndex = 13;
             this.Hantu_button.Text = "Hantu";
             this.Hantu_button.UseVisualStyleBackColor = false;
@@ -405,10 +393,9 @@ namespace Guide_Phasmo_plus
             // 
             this.Yokai_button.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Yokai_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Yokai_button.Location = new System.Drawing.Point(0, 224);
-            this.Yokai_button.Margin = new System.Windows.Forms.Padding(0);
+            this.Yokai_button.Location = new System.Drawing.Point(3, 227);
             this.Yokai_button.Name = "Yokai_button";
-            this.Yokai_button.Size = new System.Drawing.Size(99, 56);
+            this.Yokai_button.Size = new System.Drawing.Size(93, 50);
             this.Yokai_button.TabIndex = 12;
             this.Yokai_button.Text = "Yokai";
             this.Yokai_button.UseVisualStyleBackColor = false;
@@ -418,10 +405,9 @@ namespace Guide_Phasmo_plus
             // 
             this.Oni_button.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Oni_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Oni_button.Location = new System.Drawing.Point(199, 168);
-            this.Oni_button.Margin = new System.Windows.Forms.Padding(0);
+            this.Oni_button.Location = new System.Drawing.Point(202, 171);
             this.Oni_button.Name = "Oni_button";
-            this.Oni_button.Size = new System.Drawing.Size(101, 56);
+            this.Oni_button.Size = new System.Drawing.Size(95, 50);
             this.Oni_button.TabIndex = 11;
             this.Oni_button.Text = "Oni";
             this.Oni_button.UseVisualStyleBackColor = false;
@@ -431,10 +417,9 @@ namespace Guide_Phasmo_plus
             // 
             this.Yurei_button.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Yurei_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Yurei_button.Location = new System.Drawing.Point(99, 168);
-            this.Yurei_button.Margin = new System.Windows.Forms.Padding(0);
+            this.Yurei_button.Location = new System.Drawing.Point(102, 171);
             this.Yurei_button.Name = "Yurei_button";
-            this.Yurei_button.Size = new System.Drawing.Size(100, 56);
+            this.Yurei_button.Size = new System.Drawing.Size(94, 50);
             this.Yurei_button.TabIndex = 10;
             this.Yurei_button.Text = "Yurei";
             this.Yurei_button.UseVisualStyleBackColor = false;
@@ -444,10 +429,9 @@ namespace Guide_Phasmo_plus
             // 
             this.Demon_button.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Demon_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Demon_button.Location = new System.Drawing.Point(0, 168);
-            this.Demon_button.Margin = new System.Windows.Forms.Padding(0);
+            this.Demon_button.Location = new System.Drawing.Point(3, 171);
             this.Demon_button.Name = "Demon_button";
-            this.Demon_button.Size = new System.Drawing.Size(99, 56);
+            this.Demon_button.Size = new System.Drawing.Size(93, 50);
             this.Demon_button.TabIndex = 9;
             this.Demon_button.Text = "Démon";
             this.Demon_button.UseVisualStyleBackColor = false;
@@ -457,10 +441,9 @@ namespace Guide_Phasmo_plus
             // 
             this.Ombre_button.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Ombre_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Ombre_button.Location = new System.Drawing.Point(199, 112);
-            this.Ombre_button.Margin = new System.Windows.Forms.Padding(0);
+            this.Ombre_button.Location = new System.Drawing.Point(202, 115);
             this.Ombre_button.Name = "Ombre_button";
-            this.Ombre_button.Size = new System.Drawing.Size(101, 56);
+            this.Ombre_button.Size = new System.Drawing.Size(95, 50);
             this.Ombre_button.TabIndex = 8;
             this.Ombre_button.Text = "Ombre";
             this.Ombre_button.UseVisualStyleBackColor = false;
@@ -470,10 +453,9 @@ namespace Guide_Phasmo_plus
             // 
             this.Revenant_button.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Revenant_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Revenant_button.Location = new System.Drawing.Point(99, 112);
-            this.Revenant_button.Margin = new System.Windows.Forms.Padding(0);
+            this.Revenant_button.Location = new System.Drawing.Point(102, 115);
             this.Revenant_button.Name = "Revenant_button";
-            this.Revenant_button.Size = new System.Drawing.Size(100, 56);
+            this.Revenant_button.Size = new System.Drawing.Size(94, 50);
             this.Revenant_button.TabIndex = 7;
             this.Revenant_button.Text = "Revenant";
             this.Revenant_button.UseVisualStyleBackColor = false;
@@ -483,10 +465,9 @@ namespace Guide_Phasmo_plus
             // 
             this.Cauchemar_button.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Cauchemar_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Cauchemar_button.Location = new System.Drawing.Point(0, 112);
-            this.Cauchemar_button.Margin = new System.Windows.Forms.Padding(0);
+            this.Cauchemar_button.Location = new System.Drawing.Point(3, 115);
             this.Cauchemar_button.Name = "Cauchemar_button";
-            this.Cauchemar_button.Size = new System.Drawing.Size(99, 56);
+            this.Cauchemar_button.Size = new System.Drawing.Size(93, 50);
             this.Cauchemar_button.TabIndex = 6;
             this.Cauchemar_button.Text = "Cauchemar";
             this.Cauchemar_button.UseVisualStyleBackColor = false;
@@ -496,10 +477,9 @@ namespace Guide_Phasmo_plus
             // 
             this.Djinn_button.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Djinn_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Djinn_button.Location = new System.Drawing.Point(199, 56);
-            this.Djinn_button.Margin = new System.Windows.Forms.Padding(0);
+            this.Djinn_button.Location = new System.Drawing.Point(202, 59);
             this.Djinn_button.Name = "Djinn_button";
-            this.Djinn_button.Size = new System.Drawing.Size(101, 56);
+            this.Djinn_button.Size = new System.Drawing.Size(95, 50);
             this.Djinn_button.TabIndex = 5;
             this.Djinn_button.Text = "Djinn";
             this.Djinn_button.UseVisualStyleBackColor = false;
@@ -509,10 +489,9 @@ namespace Guide_Phasmo_plus
             // 
             this.Banshee_button.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Banshee_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Banshee_button.Location = new System.Drawing.Point(99, 56);
-            this.Banshee_button.Margin = new System.Windows.Forms.Padding(0);
+            this.Banshee_button.Location = new System.Drawing.Point(102, 59);
             this.Banshee_button.Name = "Banshee_button";
-            this.Banshee_button.Size = new System.Drawing.Size(100, 56);
+            this.Banshee_button.Size = new System.Drawing.Size(94, 50);
             this.Banshee_button.TabIndex = 4;
             this.Banshee_button.Text = "Banshee";
             this.Banshee_button.UseVisualStyleBackColor = false;
@@ -522,10 +501,9 @@ namespace Guide_Phasmo_plus
             // 
             this.Poltergeist_button.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Poltergeist_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Poltergeist_button.Location = new System.Drawing.Point(0, 56);
-            this.Poltergeist_button.Margin = new System.Windows.Forms.Padding(0);
+            this.Poltergeist_button.Location = new System.Drawing.Point(3, 59);
             this.Poltergeist_button.Name = "Poltergeist_button";
-            this.Poltergeist_button.Size = new System.Drawing.Size(99, 56);
+            this.Poltergeist_button.Size = new System.Drawing.Size(93, 50);
             this.Poltergeist_button.TabIndex = 3;
             this.Poltergeist_button.Text = "Poltergeist";
             this.Poltergeist_button.UseVisualStyleBackColor = false;
@@ -535,10 +513,9 @@ namespace Guide_Phasmo_plus
             // 
             this.Spectre_button.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Spectre_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Spectre_button.Location = new System.Drawing.Point(99, 0);
-            this.Spectre_button.Margin = new System.Windows.Forms.Padding(0);
+            this.Spectre_button.Location = new System.Drawing.Point(102, 3);
             this.Spectre_button.Name = "Spectre_button";
-            this.Spectre_button.Size = new System.Drawing.Size(100, 56);
+            this.Spectre_button.Size = new System.Drawing.Size(94, 50);
             this.Spectre_button.TabIndex = 1;
             this.Spectre_button.Text = "Spectre";
             this.Spectre_button.UseVisualStyleBackColor = false;
@@ -548,10 +525,9 @@ namespace Guide_Phasmo_plus
             // 
             this.Esprit_button.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Esprit_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Esprit_button.Location = new System.Drawing.Point(0, 0);
-            this.Esprit_button.Margin = new System.Windows.Forms.Padding(0);
+            this.Esprit_button.Location = new System.Drawing.Point(3, 3);
             this.Esprit_button.Name = "Esprit_button";
-            this.Esprit_button.Size = new System.Drawing.Size(99, 56);
+            this.Esprit_button.Size = new System.Drawing.Size(93, 50);
             this.Esprit_button.TabIndex = 0;
             this.Esprit_button.Text = "Esprit";
             this.Esprit_button.UseVisualStyleBackColor = false;
@@ -578,23 +554,23 @@ namespace Guide_Phasmo_plus
             this.liste_c.TabIndex = 3;
             this.liste_c.SelectedIndexChanged += new System.EventHandler(this.liste_c_SelectedIndexChanged);
             // 
-            // tableLayoutPanel1
+            // liste_cooldown_seuil
             // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.liste_s, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.seuil_domain, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.cooldown_domain, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.liste_c, 0, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(300, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28.57143F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 71.42857F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(276, 100);
-            this.tableLayoutPanel1.TabIndex = 5;
+            this.liste_cooldown_seuil.ColumnCount = 2;
+            this.liste_cooldown_seuil.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.liste_cooldown_seuil.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.liste_cooldown_seuil.Controls.Add(this.liste_s, 1, 1);
+            this.liste_cooldown_seuil.Controls.Add(this.seuil_domain, 1, 0);
+            this.liste_cooldown_seuil.Controls.Add(this.cooldown_domain, 0, 0);
+            this.liste_cooldown_seuil.Controls.Add(this.liste_c, 0, 1);
+            this.liste_cooldown_seuil.Dock = System.Windows.Forms.DockStyle.Top;
+            this.liste_cooldown_seuil.Location = new System.Drawing.Point(300, 0);
+            this.liste_cooldown_seuil.Name = "liste_cooldown_seuil";
+            this.liste_cooldown_seuil.RowCount = 2;
+            this.liste_cooldown_seuil.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28.57143F));
+            this.liste_cooldown_seuil.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 71.42857F));
+            this.liste_cooldown_seuil.Size = new System.Drawing.Size(276, 100);
+            this.liste_cooldown_seuil.TabIndex = 5;
             // 
             // liste_s
             // 
@@ -617,85 +593,77 @@ namespace Guide_Phasmo_plus
             this.seuil_domain.Text = "Seuil d\'attaque";
             this.seuil_domain.SelectedItemChanged += new System.EventHandler(this.seuil_domain_SelectedItemChanged);
             // 
-            // tableLayoutPanel2
+            // liste_infos_tips
             // 
-            this.tableLayoutPanel2.ColumnCount = 1;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.liste_tips, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.liste_entite, 0, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(300, 208);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(276, 242);
-            this.tableLayoutPanel2.TabIndex = 6;
+            this.liste_infos_tips.ColumnCount = 1;
+            this.liste_infos_tips.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.liste_infos_tips.Controls.Add(this.liste_tips, 0, 1);
+            this.liste_infos_tips.Controls.Add(this.liste_entite, 0, 0);
+            this.liste_infos_tips.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.liste_infos_tips.Location = new System.Drawing.Point(300, 208);
+            this.liste_infos_tips.Margin = new System.Windows.Forms.Padding(0);
+            this.liste_infos_tips.Name = "liste_infos_tips";
+            this.liste_infos_tips.RowCount = 2;
+            this.liste_infos_tips.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.liste_infos_tips.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.liste_infos_tips.Size = new System.Drawing.Size(276, 242);
+            this.liste_infos_tips.TabIndex = 6;
             // 
             // liste_tips
             // 
             this.liste_tips.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.liste_tips.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.liste_tips.FormattingEnabled = true;
             this.liste_tips.ItemHeight = 15;
-            this.liste_tips.Location = new System.Drawing.Point(0, 72);
-            this.liste_tips.Margin = new System.Windows.Forms.Padding(0);
+            this.liste_tips.Location = new System.Drawing.Point(3, 75);
             this.liste_tips.Name = "liste_tips";
-            this.liste_tips.Size = new System.Drawing.Size(276, 170);
+            this.liste_tips.Size = new System.Drawing.Size(270, 164);
             this.liste_tips.TabIndex = 6;
+            this.liste_tips.SelectedIndexChanged += new System.EventHandler(this.liste_tips_SelectedIndexChanged);
             // 
             // liste_entite
             // 
             this.liste_entite.Dock = System.Windows.Forms.DockStyle.Fill;
             this.liste_entite.FormattingEnabled = true;
             this.liste_entite.ItemHeight = 15;
-            this.liste_entite.Location = new System.Drawing.Point(0, 0);
-            this.liste_entite.Margin = new System.Windows.Forms.Padding(0);
+            this.liste_entite.Location = new System.Drawing.Point(3, 3);
             this.liste_entite.Name = "liste_entite";
-            this.liste_entite.Size = new System.Drawing.Size(276, 72);
+            this.liste_entite.Size = new System.Drawing.Size(270, 66);
             this.liste_entite.TabIndex = 5;
             this.liste_entite.SelectedIndexChanged += new System.EventHandler(this.liste_entite_SelectedIndexChanged);
             // 
-            // test_label
+            // pictureBox1
             // 
-            this.test_label.AutoSize = true;
-            this.test_label.Location = new System.Drawing.Point(421, 193);
-            this.test_label.Name = "test_label";
-            this.test_label.Size = new System.Drawing.Size(38, 15);
-            this.test_label.TabIndex = 7;
-            this.test_label.Text = "label1";
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(300, 100);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(276, 108);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
-            // truc
-            // 
-            this.truc.Location = new System.Drawing.Point(410, 141);
-            this.truc.Name = "truc";
-            this.truc.Size = new System.Drawing.Size(75, 23);
-            this.truc.TabIndex = 8;
-            this.truc.Text = "button30";
-            this.truc.UseVisualStyleBackColor = true;
-            this.truc.Click += new System.EventHandler(this.truc_Click);
-            // 
-            // Form1
+            // Fenetre_application_phasmo_plus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.truc);
-            this.Controls.Add(this.test_label);
-            this.Controls.Add(this.tableLayoutPanel2);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.liste_infos_tips);
+            this.Controls.Add(this.liste_cooldown_seuil);
             this.Controls.Add(this.Tables_des_preuves);
             this.Controls.Add(this.Table_des_entites);
             this.ForeColor = System.Drawing.Color.Black;
-            this.Name = "Form1";
-            this.Text = "Guide Phasmophobia+ (TM®) © 2022 Kurumo Interactive";
+            this.Name = "Fenetre_application_phasmo_plus";
+            this.Text = "Guide Phasmophobia+ TM® v 0.0.1 © 2022 Kurumo Interactive (All rights reserved)";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Tables_des_preuves.ResumeLayout(false);
             this.Table_des_entites.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
+            this.liste_cooldown_seuil.ResumeLayout(false);
+            this.liste_infos_tips.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -732,14 +700,12 @@ namespace Guide_Phasmo_plus
         private Button Esprit_button;
         private DomainUpDown cooldown_domain;
         private ListBox liste_c;
-        private TableLayoutPanel tableLayoutPanel1;
+        private TableLayoutPanel liste_cooldown_seuil;
         private ListBox liste_s;
         private DomainUpDown seuil_domain;
-        private TableLayoutPanel tableLayoutPanel2;
+        private TableLayoutPanel liste_infos_tips;
         private ListBox liste_tips;
         private ListBox liste_entite;
-        private Label test_label;
-        private Button truc;
         private Button Fantome_button;
         private Button Moroi_button;
         private Button Deogen_button;
@@ -829,6 +795,60 @@ namespace Guide_Phasmo_plus
             Entite Moroi = new Entite("Moroi", 50, 0, true, false, false, false, false, true, true);
             Entite Deogen = new Entite("Deogen", 40, 0, true, false, false, false, true, true, false);
             Entite Thaye = new Entite("Thaye", 50, 0, true, false, false, true, true, false, false);
+            Esprit.Tips_pour_debusquer = "Si un bâton d'encens est brûlé, il ne pourra attaquer qu’à" +
+                " partir de 180 secondes dans le rayon de l'encens";
+            Spectre.Tips_pour_debusquer = "Ne laisse aucune traces de pas même si vous entendez les " +
+                "bruits de pas ** Il peut se téléporter à un joueur pour effectuer des interactions" +
+                " paranormales où qu'il soit";
+            Fantome.Tips_pour_debusquer = "Fait perdre plus de santé mentale lorsqu’on le regarde lors" +
+                " d’un événement paranormal ** Il disparaît quand on le prend en photos lors d’un" +
+                " événement paranormal mais on pourra toujours l’entendre ** Il n’apparaît sur aucune " +
+                "photo ** Il clignote plus longtemps durant les chasse, soit entre 1 seconde et 1,8 " +
+                "seconde d’invisibilité entre chaque instant visible ** Il peut se déplacer jusqu'à un" +
+                " joueur pour effectuer des interactions paranormales où qu'il soit";
+            Poltergeist.Tips_pour_debusquer = "Il n’est pas plus affecté par le manque d’objets que les" +
+                " autres entités ** Il peut faire bouger plusieurs objets simultanément \r\n Il fait" +
+                " perdre 2 % de santé mentale aux joueurs présents lorsqu’il utilise son" +
+                " pouvoir ** Il est le seul qui peut faire un pic d’activité à 10 sans chasses" +
+                " ni événement particulier";
+            Banshee.Tips_pour_debusquer = "Il ne peut pas être invoqué plus souvent par une table de" +
+                " ouija ** Il ne peut pas posséder les vivants ** Elle ne ciblera qu’une seule" +
+                " personne et la suivra dans la maison ** Elle fait perdre 5 % de santé mentale" +
+                " en plus par événement paranormal à sa cible ** Elle ne chassera que sa" +
+                " cible ** Si la cible sort de la maison lors d’une chasse, elle attaquera le plus" +
+                " proche ** Elle change de cible si la cible meurt ** On peut entendre “le cri" +
+                " de la banshee” avec un micro parabolique ** Elle produit plus d’événements" +
+                " paranormaux où elle chante";
+            Djinn.Tips_pour_debusquer = "Si le courant est éteint, il ne possède aucun pouvoirs" +
+                " particulier ** Il n’éteindra jamais le disjoncteur ** Si vous êtes à plus de" +
+                " 2m, il se déplacera à 2,6 m / s ** Il peut vous faire perdre 25 % de santé mentale" +
+                " si vous restez à côté de lui SANS aucun événements paranormales";
+            Cauchemar.Tips_pour_debusquer = "Attaque à partir de 60% de santé mentale moyenne dans" +
+                " le noir (à partir de sa position dans la maison) ** Attaque à partir de 40 % de" +
+                " santé mentale moyenne dans la lumière(à partir de sa position dans la maison)" +
+                " ** Si vous allumez les lumières autour de sa pièce et il aura une chance accru" +
+                " d'aller plus loin de sa pièce ** Il ne peut pas allumer de lumière ** Il peut" +
+                " éteindre immédiatement une lumière que l’on allume dans sa pièce ** Il préfère" +
+                " faire exploser les ampoules aux autres événements paranormaux ** (éteint jamais" +
+                " le générateur ?)";
+
+            //Revenant = new Entite("Revenant", 50, 0, true, false, false, true, false, false, true);
+            //Ombre = new Entite("Ombre", 35, 0, true, true, false, false, false, false, true);
+            //Demon = new Entite("Demon", 70, 20, true, false, true, false, false, false, true);
+            //Yurei = new Entite("Yurei", 50, 0, false, false, false, true, true, false, true);
+            //Oni = new Entite("Oni", 50, 0, false, true, false, false, true, false, true);
+            //Yokai = new Entite("Yokai", 80, 0, false, false, false, true, true, true, false);
+            //Hantu = new Entite("Hantu", 50, 25, false, false, true, true, false, false, true);
+            //Goryo = new Entite("Goryo", 50, 0, false, true, true, false, true, false, false);
+            //Myling = new Entite("Myling", 50, 0, true, true, true, false, false, false, false);
+            //Onryo = new Entite("Onryo", 60, 0, false, false, false, true, false, true, true);
+            //Jumeaux = new Entite("Jumeaux", 50, 0, false, true, false, false, false, true, true);
+            //Raiju = new Entite("Raiju", 65, 0, false, true, false, true, true, false, false);
+            //Obake = new Entite("Obake", 50, 0, false, true, true, true, false, false, false);
+            //Mimic = new Entite("Mimic", 100, 0, false, false, true, true, false, true, true);
+            //Moroi = new Entite("Moroi", 50, 0, true, false, false, false, false, true, true);
+            //Deogen = new Entite("Deogen", 40, 0, true, false, false, false, true, true, false);
+            //Thaye = new Entite("Thaye", 50, 0, true, false, false, true, true, false, false);
             Liste_des_Entites.Add(Esprit);
             Liste_des_Entites.Add(Spectre);
             Liste_des_Entites.Add(Fantome);
@@ -863,6 +883,7 @@ namespace Guide_Phasmo_plus
             string Nom_e = find.Name;
             string Cool_e = find.Cooldown.ToString();
             string Seuil_e = find.Seuil_attack.ToString();
+            string Tips_e = find.Tips_pour_debusquer.ToString();
 
             string Ecriture_e = find.Ecriture.ToString();
             string EMF_e = find.EMF.ToString();
@@ -892,6 +913,7 @@ namespace Guide_Phasmo_plus
             string ligne_1 = $"[{Nom_e}] de Cooldown [{Cool_e}] s.";
             string ligne_2 = $"Attaque à partir de [{Seuil_e}%]";
             string ligne_3 = "";
+            string ligne_4 = "Nous savons juste ceci :";
             //foreach (string s in Liste_des_strings)
             //{
             //    if (s.ToString() == "True")
@@ -903,7 +925,7 @@ namespace Guide_Phasmo_plus
             //}
             //int index = Liste_des_strings.FindIndex(a => a.ToString() == "true");
             //ligne_3 = ligne_3 + index;
-            
+
             for (int i = 0; i < Liste_des_strings_bool.Count; i++)
             {
                 if (Liste_des_strings_bool[i].ToString() == "True")
@@ -915,6 +937,17 @@ namespace Guide_Phasmo_plus
             liste_tips.Items.Add(ligne_2);
             liste_tips.Items.Add(ligne_3);
 
+            string interm = Tips_e;
+            string interm2 = Tips_e;
+
+            for (int i = interm.IndexOf("** "); i != -1; i = interm.IndexOf("** "))
+            {
+                liste_tips.Items.Add(interm2.Replace(interm.Substring(interm.IndexOf("** ") + 3), "").Replace("** ",""));
+                interm = interm.Substring(interm.IndexOf("** ") + 3);
+                interm2 = interm;
+            }
+            liste_tips.Items.Add(interm);
+            //liste_tips.Items.Add(ligne_4.Replace("** ", "\r\n"));
 
             //liste_tips.Items.Add(Liste_des_strings.IndexOf(Ecriture_e));
             //liste_tips.Items.Add(Liste_des_strings.IndexOf(EMF_e));
@@ -975,158 +1008,31 @@ namespace Guide_Phasmo_plus
         }
         public void afficher_entite_cooldown_corespondant()
         {
-           foreach (Entite entite in Liste_des_Entites)
-           {
-               if (entite.Cooldown.ToString() == cooldown_domain.SelectedItem.ToString())
-               {
-                    liste_c.Items.Add(entite.Name);
-               }
-           }
+            if (cooldown_domain.SelectedItem != null)
+            {
+                foreach (Entite entite in Liste_des_Entites)
+                {
+                    if (entite.Cooldown.ToString() == cooldown_domain.SelectedItem.ToString())
+                    {
+                        liste_c.Items.Add(entite.Name);
+                    }
+                }
+            }
         }
         public void afficher_entite_seuil_corespondant()
         {
-            foreach (Entite entite in Liste_des_Entites)
+            if (seuil_domain.SelectedItem != null)
             {
-                if (entite.Seuil_attack.ToString() == seuil_domain.SelectedItem.ToString())
+                foreach (Entite entite in Liste_des_Entites)
                 {
-                    liste_s.Items.Add(entite.Name);
-                }
-            }
-
-        }
-        public void changer_couleur_btn (string preuve)
-        {
-            //List<string> Liste_des_strings_bool = new List<string>();
-            //Liste_des_strings_bool.Add("Ecriture_e");
-            //Liste_des_strings_bool.Add("EMF_e");
-            //Liste_des_strings_bool.Add("Empreintes_e");
-            //Liste_des_strings_bool.Add("Orbes_e");
-            //Liste_des_strings_bool.Add("Dots_e");
-            //Liste_des_strings_bool.Add("Spirit_e");
-            //Liste_des_strings_bool.Add("Temperature_e");
-            //Liste_des_strings_bool.Add("Ecriture");
-            //Liste_des_strings_bool.Add("EMF");
-            //Liste_des_strings_bool.Add("Empreintes");
-            //Liste_des_strings_bool.Add("Orbes");
-            //Liste_des_strings_bool.Add("Dots");
-            //Liste_des_strings_bool.Add("Spirit");
-            //Liste_des_strings_bool.Add("Temperature");
-
-            foreach (Entite entite in Liste_des_Entites)
-            {
-                if ((bool)entite.GetType().GetProperty(preuve).GetValue(entite, null))
-                {
-                    liste_entite.Items.Add(entite.Name);
-                    liste_entite.Items.Add((string)entite.GetType().GetProperty(preuve).Name);
-                    liste_entite.Items.Add((bool)entite.GetType().GetProperty(preuve).GetValue(entite, null));
-                    foreach(Button btn_entite in Table_des_entites.Controls)
+                    if (entite.Seuil_attack.ToString() == seuil_domain.SelectedItem.ToString())
                     {
-                        if ((string)btn_entite.Name.Replace("_button", "") == (string)entite.Name)
-                        {
-                            (btn_entite as Control).BackColor = Color.FromKnownColor(KnownColor.MenuHighlight);
-                        }
+                        liste_s.Items.Add(entite.Name);
                     }
                 }
-                else
-                {
-
-                }
             }
         }
-        public bool GetPropValue(object src, string propName)
-        {
-            //ajouter static au besoin dans la def de la fonction
-            return (bool)src.GetType().GetProperty(propName).GetValue(src, null);
-        }
-        public string GetPropValue2(object src, string propName)
-        {
-            //ajouter static au besoin dans la def de la fonction
-            return (string)src.GetType().GetProperty(propName).Name;
-        }
-        public void grand_changement(object btn_clicker)
-        {
-            //if (Color.FromKnownColor(KnownColor.ControlLight).ToArgb().Equals((btn_clicker as Control).BackColor.ToArgb()))
-            //{
-            //    (btn_clicker as Control).BackColor = Color.FromKnownColor(KnownColor.MenuHighlight);
-            //    changer_couleur_btn2((btn_clicker as Control).Name.Replace("_button", ""), Color.FromKnownColor(KnownColor.ControlLight).ToArgb());
-            //}
-            //else if (Color.FromKnownColor(KnownColor.MenuHighlight).ToArgb().Equals((btn_clicker as Control).BackColor.ToArgb()))
-            //{
-            //    (btn_clicker as Control).BackColor = Color.FromKnownColor(KnownColor.GrayText);
-            //    changer_couleur_btn2((btn_clicker as Control).Name.Replace("_button", ""), Color.FromKnownColor(KnownColor.ControlLight).ToArgb());
-            //}
-            //else if (Color.FromKnownColor(KnownColor.GrayText).ToArgb().Equals((btn_clicker as Control).BackColor.ToArgb()))
-            //{
-            //    (btn_clicker as Control).BackColor = Color.FromKnownColor(KnownColor.ControlLight);
-            //    changer_couleur_btn2((btn_clicker as Control).Name.Replace("_button", ""), Color.FromKnownColor(KnownColor.ControlLight).ToArgb());
-            //}
-        }
-        //public void changer_couleur_btn2(string preuve, int couleur_preuve)
-        //{
-        //    //foreach (Entite entite in Liste_des_Entites)
-        //    //{
-        //    //    if ((bool)entite.GetType().GetProperty(preuve).GetValue(entite, null))
-        //    //    {
-        //    //        foreach (Button btn_entite in Table_des_entites.Controls)
-        //    //        {
-        //    //            if ((string)btn_entite.Name.Replace("_button", "") == (string)entite.Name)
-        //    //            {
-        //    //                (btn_entite as Control).BackColor = Color.FromKnownColor(KnownColor.MenuHighlight);
-        //    //            }
-        //    //        }
-        //    //    }
-        //    //    else
-        //    //    {
 
-        //    //    }
-        //    //}
-
-        //    //foreach (Button btn_entite in Table_des_entites.Controls)
-        //    //{
-        //    //    if ((bool)entite.GetType().GetProperty(preuve).GetValue(entite, null))
-        //    //    {
-        //    //        foreach (Entite entite in Liste_des_Entites)
-        //    //        {
-        //    //            if ((string)btn_entite.Name.Replace("_button", "") == (string)entite.Name)
-        //    //            {
-        //    //                (btn_entite as Control).BackColor = Color.FromKnownColor(KnownColor.MenuHighlight);
-        //    //            }
-        //    //        }
-        //    //    }
-        //    //    else
-        //    //    {
-
-        //    //    }
-        //    //}
-        //    int nbr_bleu = 0;
-        //    foreach(Button btn_preuve in Tables_des_preuves.Controls)
-        //    {
-        //        if (Color.FromKnownColor(KnownColor.MenuHighlight).ToArgb().Equals(btn_preuve.BackColor.ToArgb())) { nbr_bleu++; }
-        //    }
-        //    if (nbr_bleu == 0)
-        //    {
-        //        foreach (Button btn_entite in Table_des_entites.Controls)
-        //            if (Color.FromKnownColor(KnownColor.ControlLight).ToArgb().Equals((btn_clicker as Control).BackColor.ToArgb()))
-        //            {
-        //                (btn_clicker as Control).BackColor = Color.FromKnownColor(KnownColor.MenuHighlight);
-        //                changer_couleur_btn2((btn_clicker as Control).Name.Replace("_button", ""), Color.FromKnownColor(KnownColor.ControlLight).ToArgb());
-        //            }
-        //            else if (Color.FromKnownColor(KnownColor.MenuHighlight).ToArgb().Equals((btn_clicker as Control).BackColor.ToArgb()))
-        //            {
-        //                (btn_clicker as Control).BackColor = Color.FromKnownColor(KnownColor.GrayText);
-        //                changer_couleur_btn2((btn_clicker as Control).Name.Replace("_button", ""), Color.FromKnownColor(KnownColor.ControlLight).ToArgb());
-        //            }
-        //            else if (Color.FromKnownColor(KnownColor.GrayText).ToArgb().Equals((btn_clicker as Control).BackColor.ToArgb()))
-        //            {
-        //                (btn_clicker as Control).BackColor = Color.FromKnownColor(KnownColor.ControlLight);
-        //                changer_couleur_btn2((btn_clicker as Control).Name.Replace("_button", ""), Color.FromKnownColor(KnownColor.ControlLight).ToArgb());
-        //            }
-        //    }
-        //    else
-        //    {
-
-        //    }
-        //}
         public void changer_couleur_btn3(object btn_clicker)
         {
             // Etape 1 : changer la couleur du btn
@@ -1185,112 +1091,6 @@ namespace Guide_Phasmo_plus
                 }
             }
 
-            //// Etape 4 : pour chaque entite si 1 seul gris => gris ; si 1 bleu sans gris => bleu ; sinon blanc
-            //int etat_btn_entite = -1;
-            //foreach (Button btn_entite in Table_des_entites.Controls)
-            //{
-            //    string interm_nom_btn_entite = btn_entite.Name.Replace("_button", "");
-            //    foreach (Entite entite_instance in Liste_des_Entites)
-            //    {
-            //        ////if (entite_instance.Name == interm_nom_btn_entite)//7
-            //        if (entite_instance.Name.Equals(interm_nom_btn_entite))//7
-            //        {
-            //            etat_btn_entite = -1;
-            //            foreach (Button btn_preuve in Tables_des_preuves.Controls)
-            //            {
-            //                string interm_nom_btn_preuve = btn_preuve.Name.Replace("_button", "");
-            //                if (interm_nom_btn_preuve != "Reboot")
-            //                {
-
-            //                    //// si entite.preuve est vrai alors mettre le btn entite en indéterminé
-            //                    //if (((bool)entite_instance.GetType().GetProperty(interm_nom_btn_preuve).GetValue(entite_instance, null)))
-            //                    //{
-            //                    //    btn_entite.BackColor = Color.FromKnownColor(KnownColor.ControlLight);
-            //                    //}
-
-            //                    //// si entite.preuve est vrai ET btn preuve en bleu
-            //                    ////raté: fait rien mais ne bug pas
-            //                    //if (((bool)entite_instance.GetType().GetProperty(interm_nom_btn_preuve).GetValue(entite_instance, null)) &&
-            //                    //    (bool)Color.FromKnownColor(KnownColor.MenuHighlight).ToArgb().Equals(btn_preuve.BackColor.ToArgb()))
-            //                    //{
-            //                    //    if (etat_btn_entite != 1)
-            //                    //    {
-            //                    //        etat_btn_entite = 0;
-            //                    //    }
-            //                    //}
-
-            //                    //// si entite.preuve est vrai ET btn preuve en bleu
-            //                    //if (entite_instance.GetType().GetProperty(interm_nom_btn_preuve).ToString() == interm_nom_btn_entite)
-            //                    //{
-            //                    //    if (etat_btn_entite != 1)
-            //                    //    {
-            //                    //        etat_btn_entite = 0;
-            //                    //    }
-            //                    //}
-
-
-            //                    // si entite.preuve est vrai alors mettre le btn entite en indéterminé
-            //                    if (((bool)entite_instance.GetType().GetProperty(interm_nom_btn_preuve).GetValue(entite_instance, null)))
-            //                    {
-            //                        if (Color.FromKnownColor(KnownColor.MenuHighlight).ToArgb().Equals(btn_preuve.BackColor.ToArgb()))
-            //                        {
-            //                            if (etat_btn_entite != 1)
-            //                            {
-            //                                etat_btn_entite = 0;
-            //                            }
-            //                        }
-            //                        if (Color.FromKnownColor(KnownColor.GrayText).ToArgb().Equals(btn_preuve.BackColor.ToArgb()))
-            //                        {
-            //                            etat_btn_entite = 1;
-            //                        }
-            //                        if (Color.FromKnownColor(KnownColor.ControlLight).ToArgb().Equals(btn_preuve.BackColor.ToArgb()))
-            //                        {
-            //                            //if (etat_btn_entite == -1)
-            //                            //{
-            //                            //    etat_btn_entite = -1;
-            //                            //}
-            //                        }
-            //                    }
-
-            //                    else
-            //                    {
-            //                        if (Color.FromKnownColor(KnownColor.MenuHighlight).ToArgb().Equals(btn_preuve.BackColor.ToArgb()))
-            //                        {
-            //                            etat_btn_entite = 1;
-            //                        }
-            //                        if (Color.FromKnownColor(KnownColor.GrayText).ToArgb().Equals(btn_preuve.BackColor.ToArgb()))
-            //                        {
-            //                            etat_btn_entite = 1;
-            //                        }
-            //                        if (Color.FromKnownColor(KnownColor.ControlLight).ToArgb().Equals(btn_preuve.BackColor.ToArgb()))
-            //                        {
-            //                            if (etat_btn_entite != 1)
-            //                            {
-            //                                etat_btn_entite = -1;
-            //                            }
-            //                        }
-            //                    }
-            //                }
-            //            }
-
-            //            switch (etat_btn_entite)
-            //            {
-            //                case -1:
-            //                    btn_entite.BackColor = Color.FromKnownColor(KnownColor.ControlLight);
-            //                    break;
-            //                case 0:
-            //                    btn_entite.BackColor = Color.FromKnownColor(KnownColor.MenuHighlight);
-            //                    break;
-            //                case 1:
-            //                    btn_entite.BackColor = Color.FromKnownColor(KnownColor.GrayText);
-            //                    break;
-            //            }
-            //            etat_btn_entite = -1;
-            //        }
-            //    }
-            //}
-
-
             // Etape 4 : pour chaque entite si 1 seul gris => gris ; si 1 bleu sans gris => bleu ; sinon blanc
             int etat_btn_entite = -1;
             foreach (Button btn_entite in Table_des_entites.Controls)
@@ -1298,21 +1098,8 @@ namespace Guide_Phasmo_plus
                 string interm_nom_btn_entite = btn_entite.Name.Replace("_button", "");
                 foreach (Entite entite_instance in Liste_des_Entites)
                 {
-                    ////if (entite_instance.Name == interm_nom_btn_entite)//7
-                    if (entite_instance.Name.Equals(interm_nom_btn_entite))//7
+                    if (entite_instance.Name.Equals(interm_nom_btn_entite))
                     {
-                        if (Color.FromKnownColor(KnownColor.MenuHighlight).ToArgb().Equals(btn_entite.BackColor.ToArgb()))
-                        {
-                            etat_btn_entite = 0;
-                        }
-                        if (Color.FromKnownColor(KnownColor.GrayText).ToArgb().Equals(btn_entite.BackColor.ToArgb()))
-                        {
-                            etat_btn_entite = 1;
-                        }
-                        if (Color.FromKnownColor(KnownColor.ControlLight).ToArgb().Equals(btn_entite.BackColor.ToArgb()))
-                        {
-                            etat_btn_entite = -1;
-                        }
                         foreach (Button btn_preuve in Tables_des_preuves.Controls)
                         {
                             string interm_nom_btn_preuve = btn_preuve.Name.Replace("_button", "");
@@ -1344,8 +1131,7 @@ namespace Guide_Phasmo_plus
                                         etat_btn_entite = 1;
                                     }
                                     if (Color.FromKnownColor(KnownColor.GrayText).ToArgb().Equals(btn_preuve.BackColor.ToArgb()))
-                                    {//wip avant rien'
-                                        etat_btn_entite = 0;
+                                    {
                                     }
                                     if (Color.FromKnownColor(KnownColor.ControlLight).ToArgb().Equals(btn_preuve.BackColor.ToArgb()))
                                     {
@@ -1384,5 +1170,31 @@ namespace Guide_Phasmo_plus
                 btn_entite.BackColor = Color.FromKnownColor(KnownColor.ControlLight);
             }
         }
+
+        public void reboot_cooldown_seuil_tips()
+        {
+            cooldown_domain.Items.Clear();
+            seuil_domain.Items.Clear();
+            liste_c.Items.Clear();
+            liste_s.Items.Clear();
+            cooldown_domain.Text = "Cooldown";
+            seuil_domain.Text = "Seuil d\'attaque";
+            liste_tips.Items.Clear();
+            charger_liste_cooldown();
+            charger_liste_seuil();
+        }
+        public void afficher_entites_dans_liste()
+        {
+            liste_entite.Items.Clear();
+            foreach (Button btn_entite in Table_des_entites.Controls)
+            {
+                if (Color.FromKnownColor(KnownColor.MenuHighlight).ToArgb().Equals(btn_entite.BackColor.ToArgb()))
+                {
+                    liste_entite.Items.Add(btn_entite.Name.Replace("_button", ""));
+                }
+            }
+        }
+
+        private PictureBox pictureBox1;
     }
 }
