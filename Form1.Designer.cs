@@ -710,65 +710,9 @@ namespace Guide_Phasmo_plus
         private Button Moroi_button;
         private Button Deogen_button;
         private Button Thaye_button;
-        //Entite Esprit = new Entite("Esprit", 50, 25, true, true, false, false, false, true);
-        public void Initier_les_entites()
-        {
-            Entite Esprit = new Entite("Esprit", 50, 25, true, true, false, false, false, true, false);
-            Entite Spectre = new Entite("Spectre", 50, 25, false, true, false, false, true, true, false);
-            Entite Fantome = new Entite("Fantome", 50, 0, false, false, true, false, true, true, false);
-            Entite Poltergeist = new Entite("Poltergeist", 50, 0, true, false, true, false, false, true, false);
-            Entite Banshee = new Entite("Banshee", 50, 0, false, false, true, true, true, false, false);
-            Entite Djinn = new Entite("Djinn", 50, 0, false, true, true, false, false, false, true);
-            Entite Cauchemar = new Entite("Cauchemar", 60, 0, true, false, false, true, false, true, false);
-            Entite Revenant = new Entite("Revenant", 50, 0, true, false, false, true, false, false, true);
-            Entite Ombre = new Entite("Ombre", 35, 0, true, true, false, false, false, false, true);
-            Entite Demon = new Entite("Demon", 70, 20, true, false, true, false, false, false, true);
-            Entite Yurei = new Entite("Yurei", 50, 0, false, false, false, true, true, false, true);
-            Entite Oni = new Entite("Oni", 50, 0, false, true, false, false, true, false, true);
-            Entite Yokai = new Entite("Yokai", 80, 0, false, false, false, true, true, true, false);
-            Entite Hantu = new Entite("Hantu", 50, 25, false, false, true, true, false, false, true);
-            Entite Goryo = new Entite("Goryo", 50, 0, false, true, true, false, true, false, false);
-            Entite Myling = new Entite("Myling", 50, 0, true, true, true, false, false, false, false);
-            Entite Onryo = new Entite("Onryo", 60, 0, false, false, false, true, false, true, true);
-            Entite Jumeaux = new Entite("Jumeaux", 50, 0, false, true, false, false, false, true, true);
-            Entite Raiju = new Entite("Raiju", 65, 0, false, true, false, true, true, false, false);
-            Entite Obake = new Entite("Obake", 50, 0, false, true, true, true, false, false, false);
-            Entite Mimic = new Entite("Mimic", 100, 0, false, false, true, true, false, true, true);
-            Entite Moroi = new Entite("Moroi", 50, 0, true, false, false, false, false, true, true);
-            Entite Deogen = new Entite("Deogen", 40, 0, true, false, false, false, true, true, false);
-            Entite Thaye = new Entite("Thaye", 50, 0, true, false, false, true, true, false, false);
-            //liste_entite.Items.Add(Jumeaux.Name);
-            //liste_entite.Items.Add(GetPropValue(Fantome, "Dots"));
-            //liste_entite.Items.Add(GetPropValue2(Fantome, "Dots"));
-        }
+        private PictureBox pictureBox1;
+
         List<Entite> Liste_des_Entites = new List<Entite>();
-        public void Lister_les_entites_rate()
-        {
-            Liste_des_Entites.Add(new Entite("Esprit", 50, 25, true, true, false, false, false, true, false));
-            Liste_des_Entites.Add(new Entite("Spectre", 50, 25, false, true, false, false, true, true, false));
-            Liste_des_Entites.Add(new Entite("Fantome", 50, 0, false, false, true, false, true, true, false));
-            Liste_des_Entites.Add(new Entite("Poltergeist", 50, 0, true, false, true, false, false, true, false));
-            Liste_des_Entites.Add(new Entite("Banshee", 50, 0, false, false, true, true, true, false, false));
-            Liste_des_Entites.Add(new Entite("Djinn", 50, 0, false, true, true, false, false, false, true));
-            Liste_des_Entites.Add(new Entite("Cauchemar", 60, 0, true, false, false, true, false, true, false));
-            Liste_des_Entites.Add(new Entite("Revenant", 50, 0, true, false, false, true, false, false, true));
-            Liste_des_Entites.Add(new Entite("Ombre", 35, 0, true, true, false, false, false, false, true));
-            Liste_des_Entites.Add(new Entite("Demon", 70, 20, true, false, true, false, false, false, true));
-            Liste_des_Entites.Add(new Entite("Yurei", 50, 0, false, false, false, true, true, false, true));
-            Liste_des_Entites.Add(new Entite("Oni", 50, 0, false, true, false, false, true, false, true));
-            Liste_des_Entites.Add(new Entite("Yokai", 80, 0, false, false, false, true, true, true, false));
-            Liste_des_Entites.Add(new Entite("Hantu", 50, 25, false, false, true, true, false, false, true));
-            Liste_des_Entites.Add(new Entite("Goryo", 50, 0, false, true, true, false, true, false, false));
-            Liste_des_Entites.Add(new Entite("Myling", 50, 0, true, true, true, false, false, false, false));
-            Liste_des_Entites.Add(new Entite("Onryo", 60, 0, false, false, false, true, false, true, true));
-            Liste_des_Entites.Add(new Entite("Jumeaux", 50, 0, false, true, false, false, false, true, true));
-            Liste_des_Entites.Add(new Entite("Raiju", 65, 0, false, true, false, true, true, false, false));
-            Liste_des_Entites.Add(new Entite("Obake", 50, 0, false, true, true, true, false, false, false));
-            Liste_des_Entites.Add(new Entite("Mimic", 100, 0, false, false, true, true, false, true, true));
-            Liste_des_Entites.Add(new Entite("Moroi", 50, 0, true, false, false, false, false, true, true));
-            Liste_des_Entites.Add(new Entite("Deogen", 40, 0, true, false, false, false, true, true, false));
-            Liste_des_Entites.Add(new Entite("Thaye", 50, 0, true, false, false, true, true, false, false));
-        }
         public void Lister_les_entites()
         {
             Entite Esprit = new Entite("Esprit", 50, 25, true, true, false, false, false, true, false);
@@ -807,7 +751,7 @@ namespace Guide_Phasmo_plus
                 "seconde d’invisibilité entre chaque instant visible ** Il peut se déplacer jusqu'à un" +
                 " joueur pour effectuer des interactions paranormales où qu'il soit";
             Poltergeist.Tips_pour_debusquer = "Il n’est pas plus affecté par le manque d’objets que les" +
-                " autres entités ** Il peut faire bouger plusieurs objets simultanément \r\n Il fait" +
+                " autres entités ** Il peut faire bouger plusieurs objets simultanément ** Il fait" +
                 " perdre 2 % de santé mentale aux joueurs présents lorsqu’il utilise son" +
                 " pouvoir ** Il est le seul qui peut faire un pic d’activité à 10 sans chasses" +
                 " ni événement particulier";
@@ -821,7 +765,7 @@ namespace Guide_Phasmo_plus
                 " paranormaux où elle chante";
             Djinn.Tips_pour_debusquer = "Si le courant est éteint, il ne possède aucun pouvoirs" +
                 " particulier ** Il n’éteindra jamais le disjoncteur ** Si vous êtes à plus de" +
-                " 2m, il se déplacera à 2,6 m / s ** Il peut vous faire perdre 25 % de santé mentale" +
+                " 2m, il se déplacera à 2,6 m/s ** Il peut vous faire perdre 25 % de santé mentale" +
                 " si vous restez à côté de lui SANS aucun événements paranormales";
             Cauchemar.Tips_pour_debusquer = "Attaque à partir de 60% de santé mentale moyenne dans" +
                 " le noir (à partir de sa position dans la maison) ** Attaque à partir de 40 % de" +
@@ -829,26 +773,77 @@ namespace Guide_Phasmo_plus
                 " ** Si vous allumez les lumières autour de sa pièce et il aura une chance accru" +
                 " d'aller plus loin de sa pièce ** Il ne peut pas allumer de lumière ** Il peut" +
                 " éteindre immédiatement une lumière que l’on allume dans sa pièce ** Il préfère" +
-                " faire exploser les ampoules aux autres événements paranormaux ** (éteint jamais" +
-                " le générateur ?)";
+                " faire exploser les ampoules aux autres événements paranormaux";
+            Revenant.Tips_pour_debusquer = "Il se déplace à 3,1 m/s lorsqu’il vous voit " +
+                "lors d’une chasse ** Il se déplace très lentement lorsqu’il ne vous voit " +
+                "pas lors d’une chasse";
+            Ombre.Tips_pour_debusquer = "Elle ne lancera pas de chasse si plusieurs chasseurs à" +
+                " proximité ** Elle préfère faire les événements “boule de fumée + cri” et" +
+                " “apparition en forme d’ombre” ** Elle ne fera aucun événements paranormaux si" +
+                " un chasseur est dans sa pièce";
+            Demon.Tips_pour_debusquer = "Peut attaquer à partir de 100% de santé mentale" +
+                " moyenne ** Si un bâton d'encens est brûlé, il ne pourra attaquer que à partir" +
+                " de 60 secondes dans le rayon de l'encens ** Le rayon du crucifix est de 5m sur" +
+                " cette entité";
+            Yurei.Tips_pour_debusquer = "Quand vous le regardez, vous perdez plus de santé" +
+                " mentale ** Brûler de l'encens dans sa pièce, cela empêche de le faire sortir" +
+                " de sa pièce ** Il peut vous enlever 10 à 15 % de santé mentale en fermant" +
+                " complètement une porte";
+            // risques de bugs avec les parenthèses
+            Oni.Tips_pour_debusquer = "Il est très actif (environ 4 à 5 événements paranormaux" +
+                " en quelques minutes) ** Envoi souvent les objets fortement ** Il préfère faire" +
+                " comme événements paranormaux “une apparition physique pas ombre ni" +
+                " transparent” ** Il ne fera jamais l’événement paranormal “boule de fumée + cri”" +
+                " soit celle de la buée";
+            Yokai.Tips_pour_debusquer = "Si la chasse démarre très souvent à côté de vous (<2m)" +
+                " c’est un yokaï ** Il entend les voix sur un rayon de 2m autour de lui";
+            Hantu.Tips_pour_debusquer = "Il n’accélère pas en vous voyant durant une chasse ** Sa" +
+                " vitesse de déplacement augmente plus la température est basse(il existe 5 paliers" +
+                " de vitesse) ** Il fait de la buée comme les chasseur lorsqu’il est dans une salle" +
+                " avec une température glaciale ** Il a deux fois plus de chance de couper le" +
+                " disjoncteur";
+            Goryo.Tips_pour_debusquer = "Il ne se montrera jamais aux D.O.T.S si quelqu’un est " +
+                "présent dans sa salle ou à proximité ** Il ne se montrera sur les D.O.T.S qu'à" +
+                " travers une caméra  ** Il se déplace que très très rarement loin de sa salle";
+            Myling.Tips_pour_debusquer = "Il n’est pas silencieux lors d’une chasse ** Il n’émet" +
+                " pas plus de sons paranormaux ** Il ne fait aucun bruit lors d’une chasse une" +
+                " fois dans un rayon de 10m autour de vous ** Il peut vous faire entendre des" +
+                " bruit de pas même s’il est à un autre étage que vous";
+            Onryo.Tips_pour_debusquer = "50% de chasse de faire attaque “spéciale” à partir de" +
+                " 100% de santé mentale moyenne s’il éteint une flamme ** Il ne fera aucune" +
+                " attaque “spéciale” durant les 3 première fois où il éteindra une flamme ** A" +
+                " chaque mort, il gagne 25 % de chance de déclencher son attaque “spéciale” s’il" +
+                " éteint une flamme ** Il éteindra plus souvent les bougies";
+            Jumeaux.Tips_pour_debusquer = "Ils n'interagissent pas en même temps ** Il n’y a" +
+                " pas deux entités en même temps lors d’une chasse ** Les deux entités donnent" +
+                " l’EMF 5 ** Les preuves Spirit box et Températures glaciales ne sont trouvable" +
+                " que dans la pièce du “vrai” jumeau et pas du “leurre” ** Ils peuvent faire" +
+                " souvent des interactions à deux endroit presque simultanément ** Lors d’une" +
+                " chasse, si le “vrai” jumeau attaque, il se déplacera à 80 % de sa vitesse et" +
+                " le “leurre” à 110 % de sa vitesse ** Le “leurre” fera forcément une interaction" +
+                " paranormal avant d’attaquer";
+            Raiju.Tips_pour_debusquer = "Il fait clignoter les lampes de plus de 10m lors d’une" +
+                " chasse ** S’il y a au moins un objet électronique allumé(excepté le capteur de" +
+                " mouvement et la lampe frontale) Il avance à 2,2 m/s lors des chasses ** S’il" +
+                " y a au moins un objet électronique allumé(excepté le capteur de mouvement et" +
+                " la lampe frontale) ses bruits de pas seront très rapides ** S’il y a au moins" +
+                " un objet électronique allumé(excepté le capteur de mouvement et la lampe frontale)" +
+                " il accélère même s’il ne voit personnes lors de chasse ** S’il y a au moins" +
+                " un objet électronique allumé(excepté le capteur de mouvement et la lampe frontale)" +
+                " il sera bien plus actif";
+            Obake.Tips_pour_debusquer = "Il ne change pas de forme ** Une empreinte de main laissé" +
+                " par cette entité possède 6 doigts au lieu de 5 ** Il peut ne pas laisser" +
+                " d’empreintes ** Il peut diviser par deux n’importe quel cooldown en cours" +
+                " durant la partie que ce soit pour une empreinte, une chasse ou autre";
+            Mimic.Tips_pour_debusquer = "Il copie les caractéristiques et comportement d’une" +
+                " autre entité ** Il peut se copié lui-même et ne fera donc rien ** Il peut" +
+                " copier un chasseur en matière d’interaction et de chasse ** Il copie de manière" +
+                " temporaire ** Il transitionne entre chaque changement de comportement pendant" +
+                " 1min. ** Il y a des Orbe fantomatique proche de cette entité";
+            Moroi.Tips_pour_debusquer = "Empty";
+            Deogen.Tips_pour_debusquer = "Empty";
+            Thaye.Tips_pour_debusquer = "Empty";
 
-            //Revenant = new Entite("Revenant", 50, 0, true, false, false, true, false, false, true);
-            //Ombre = new Entite("Ombre", 35, 0, true, true, false, false, false, false, true);
-            //Demon = new Entite("Demon", 70, 20, true, false, true, false, false, false, true);
-            //Yurei = new Entite("Yurei", 50, 0, false, false, false, true, true, false, true);
-            //Oni = new Entite("Oni", 50, 0, false, true, false, false, true, false, true);
-            //Yokai = new Entite("Yokai", 80, 0, false, false, false, true, true, true, false);
-            //Hantu = new Entite("Hantu", 50, 25, false, false, true, true, false, false, true);
-            //Goryo = new Entite("Goryo", 50, 0, false, true, true, false, true, false, false);
-            //Myling = new Entite("Myling", 50, 0, true, true, true, false, false, false, false);
-            //Onryo = new Entite("Onryo", 60, 0, false, false, false, true, false, true, true);
-            //Jumeaux = new Entite("Jumeaux", 50, 0, false, true, false, false, false, true, true);
-            //Raiju = new Entite("Raiju", 65, 0, false, true, false, true, true, false, false);
-            //Obake = new Entite("Obake", 50, 0, false, true, true, true, false, false, false);
-            //Mimic = new Entite("Mimic", 100, 0, false, false, true, true, false, true, true);
-            //Moroi = new Entite("Moroi", 50, 0, true, false, false, false, false, true, true);
-            //Deogen = new Entite("Deogen", 40, 0, true, false, false, false, true, true, false);
-            //Thaye = new Entite("Thaye", 50, 0, true, false, false, true, true, false, false);
             Liste_des_Entites.Add(Esprit);
             Liste_des_Entites.Add(Spectre);
             Liste_des_Entites.Add(Fantome);
@@ -914,17 +909,6 @@ namespace Guide_Phasmo_plus
             string ligne_2 = $"Attaque à partir de [{Seuil_e}%]";
             string ligne_3 = "";
             string ligne_4 = "Nous savons juste ceci :";
-            //foreach (string s in Liste_des_strings)
-            //{
-            //    if (s.ToString() == "True")
-            //    {
-            //        //Liste_des_strings.FindIndex(s => s.ToString() == "True");
-            //        ligne_3 = ligne_3 + Liste_des_strings.IndexOf(s) + " ; ";
-            //    }
-
-            //}
-            //int index = Liste_des_strings.FindIndex(a => a.ToString() == "true");
-            //ligne_3 = ligne_3 + index;
 
             for (int i = 0; i < Liste_des_strings_bool.Count; i++)
             {
@@ -942,33 +926,11 @@ namespace Guide_Phasmo_plus
 
             for (int i = interm.IndexOf("** "); i != -1; i = interm.IndexOf("** "))
             {
-                liste_tips.Items.Add(interm2.Replace(interm.Substring(interm.IndexOf("** ") + 3), "").Replace("** ",""));
+                liste_tips.Items.Add("-" + interm2.Replace(interm.Substring(interm.IndexOf("** ") + 3), "").Replace("** ",""));
                 interm = interm.Substring(interm.IndexOf("** ") + 3);
                 interm2 = interm;
             }
-            liste_tips.Items.Add(interm);
-            //liste_tips.Items.Add(ligne_4.Replace("** ", "\r\n"));
-
-            //liste_tips.Items.Add(Liste_des_strings.IndexOf(Ecriture_e));
-            //liste_tips.Items.Add(Liste_des_strings.IndexOf(EMF_e));
-            //liste_tips.Items.Add(Liste_des_strings.IndexOf(Empreintes_e));
-            //liste_tips.Items.Add(Liste_des_strings.IndexOf(Orbes_e));
-            //liste_tips.Items.Add(Liste_des_strings.IndexOf(Dots_e));
-            //liste_tips.Items.Add(Liste_des_strings.IndexOf(Spirit_e));
-            //liste_tips.Items.Add(Liste_des_strings.IndexOf(Temperature_e));
-            //liste_tips.Items.Add(Liste_des_strings[1]);
-            //liste_tips.Items.Add(Liste_des_strings[2]);
-            //liste_tips.Items.Add(Liste_des_strings[3]);
-            //liste_tips.Items.Add(Liste_des_strings[4]);
-
-            //Dictionary<string, string> Liste_des_strings = new Dictionary<string, string>();
-            //Liste_des_strings.Add(nameof(Ecriture_e), Ecriture_e.ToString());
-            //Liste_des_strings.Add(nameof(EMF_e), EMF_e.ToString());
-            //Liste_des_strings.Add(nameof(Empreintes_e), Empreintes_e.ToString());
-            //Liste_des_strings.Add(nameof(Orbes_e), Orbes_e.ToString());
-            //Liste_des_strings.Add(nameof(Dots_e), Dots_e.ToString());
-            //Liste_des_strings.Add(nameof(Spirit_e), Spirit_e.ToString());
-            //Liste_des_strings.Add(nameof(Temperature_e), Temperature_e.ToString());
+            liste_tips.Items.Add("-" + interm);
         }
         List<int> Liste_des_Cooldown = new List<int>();
         public void Lister_les_cooldowns()
@@ -1195,6 +1157,6 @@ namespace Guide_Phasmo_plus
             }
         }
 
-        private PictureBox pictureBox1;
+        
     }
 }
