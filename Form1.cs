@@ -16,10 +16,6 @@ namespace Guide_Phasmo_plus
             charger_liste_seuil();
         }
 
-        private void truc_Click(object sender, EventArgs e)
-        {
-        }
-
         private void liste_c_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (liste_c.SelectedItem != null)
@@ -76,11 +72,6 @@ namespace Guide_Phasmo_plus
         }
 
         private void liste_tips_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void test_label_Click(object sender, EventArgs e)
         {
 
         }

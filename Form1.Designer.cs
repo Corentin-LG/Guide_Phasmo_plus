@@ -923,12 +923,27 @@ namespace Guide_Phasmo_plus
 
             string interm = Tips_e;
             string interm2 = Tips_e;
+            string ajout = Tips_e;
+            int taille_interm = 0;
 
             for (int i = interm.IndexOf("** "); i != -1; i = interm.IndexOf("** "))
             {
-                liste_tips.Items.Add("-" + interm2.Replace(interm.Substring(interm.IndexOf("** ") + 3), "").Replace("** ",""));
+
+                //ajout = interm2.Replace(interm.Substring(interm.IndexOf("** ") + 3), "").Replace("** ", "");
+                //if (ajout.Length > 30)
+                //{
+                //    taille_interm++;
+                //}
+                //for (int j = ajout.Length; j < 30; j = ajout.Length)
+                //{
+                //    ajout.Substring(ajout.Length - 30, 30);
+                //}
+
+
+                liste_tips.Items.Add("-" + interm2.Replace(interm.Substring(interm.IndexOf("** ") + 3), "").Replace("** ", ""));
                 interm = interm.Substring(interm.IndexOf("** ") + 3);
                 interm2 = interm;
+                ajout = interm;
             }
             liste_tips.Items.Add("-" + interm);
         }
