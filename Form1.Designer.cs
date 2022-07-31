@@ -619,7 +619,6 @@ namespace Guide_Phasmo_plus
             this.liste_tips.Name = "liste_tips";
             this.liste_tips.Size = new System.Drawing.Size(270, 164);
             this.liste_tips.TabIndex = 6;
-            this.liste_tips.SelectedIndexChanged += new System.EventHandler(this.liste_tips_SelectedIndexChanged);
             // 
             // liste_entite
             // 
@@ -1011,7 +1010,7 @@ namespace Guide_Phasmo_plus
             }
         }
 
-        public void changer_couleur_btn3(object btn_clicker)
+        public void changer_couleur_btn_entite(object btn_clicker)
         {
             // Etape 1 : changer la couleur du btn
             if (Color.FromKnownColor(KnownColor.ControlLight).ToArgb().Equals((btn_clicker as Control).BackColor.ToArgb()))
@@ -1148,7 +1147,7 @@ namespace Guide_Phasmo_plus
                 btn_entite.BackColor = Color.FromKnownColor(KnownColor.ControlLight);
             }
         }
-
+        
         public void reboot_cooldown_seuil_tips()
         {
             cooldown_domain.Items.Clear();
@@ -1175,15 +1174,6 @@ namespace Guide_Phasmo_plus
 
         public void credits_corentin_legoff()
         {
-            //liste_tips.Items.Clear();
-            //liste_tips.Items.Add("Producteur : Kurumo Interactive(All rights reserved)");
-            //liste_tips.Items.Add("Chef de projet : Corentin Le Goff");
-            //liste_tips.Items.Add("Programeur : Corentin Le Goff");
-            //liste_tips.Items.Add("Designer : Corentin Le Goff");
-            //liste_tips.Items.Add("Pseudonyme : Kurumo");
-            //liste_entite.Items.Clear();
-            //liste_entite.Items.Add("Merci pour votre utilisation de : ");
-            //liste_entite.Items.Add(this.Name);
             MessageBox.Show("- Producteur : Kurumo Interactive (All rights reserved) \r\n" +
                 "- Chef de projet : Corentin Le Goff \r\n" +
                 "- Programeur : Corentin Le Goff \r\n" +
@@ -1191,6 +1181,13 @@ namespace Guide_Phasmo_plus
                 "- Pseudonyme : Kurumo \r\n" +
                 "- Merci pour votre utilisation de : \r\n" +
                 "- " + this.Text);
+        }
+        public Bitmap changer_skin_souris()
+        {
+            string souris_skin = "BriquetCurseur" + ".png";
+            string path = AppDomain.CurrentDomain.BaseDirectory + souris_skin;
+            //return new Bitmap(new Bitmap(path), 12, 60);
+            return new Bitmap(new Bitmap(path), 6, 40);
         }
     }
 }

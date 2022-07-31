@@ -14,6 +14,7 @@ namespace Guide_Phasmo_plus
             Lister_les_seuils();
             charger_liste_cooldown();
             charger_liste_seuil();
+            this.Cursor = new Cursor(changer_skin_souris().GetHicon());
         }
 
         private void liste_c_SelectedIndexChanged(object sender, EventArgs e)
@@ -46,7 +47,7 @@ namespace Guide_Phasmo_plus
 
         private void Preuve_Click(object sender, EventArgs e)
         {
-            changer_couleur_btn3(sender);
+            changer_couleur_btn_entite(sender);
             afficher_entites_dans_liste();
         }
 
@@ -69,11 +70,6 @@ namespace Guide_Phasmo_plus
             reboot_couleur();
             reboot_cooldown_seuil_tips();
             afficher_entites_dans_liste();
-        }
-
-        private void liste_tips_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
