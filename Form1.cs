@@ -1,8 +1,8 @@
 namespace Guide_Phasmo_plus
 {
-    public partial class Form1 : Form
+    public partial class Fenetre_application_phasmo_plus : Form
     {
-        public Form1()
+        public Fenetre_application_phasmo_plus()
         {
             InitializeComponent();
         }
@@ -14,18 +14,15 @@ namespace Guide_Phasmo_plus
             Lister_les_seuils();
             charger_liste_cooldown();
             charger_liste_seuil();
-        }
-
-        private void truc_Click(object sender, EventArgs e)
-        {
-            //test_label.Text = (sender as Control).Name;
-            Initier_les_entites();
-            
+            this.Cursor = new Cursor(changer_skin_souris().GetHicon());
         }
 
         private void liste_c_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            if (liste_c.SelectedItem != null)
+            {
+                afficher_attributs_entite(liste_c.SelectedItem.ToString());
+            }
         }
 
         private void seuil_domain_SelectedItemChanged(object sender, EventArgs e)
@@ -36,7 +33,10 @@ namespace Guide_Phasmo_plus
 
         private void liste_s_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            if (liste_s.SelectedItem != null)
+            {
+                afficher_attributs_entite(liste_s.SelectedItem.ToString());
+            }
         }
 
         private void cooldown_domain_SelectedItemChanged(object sender, EventArgs e)
@@ -47,28 +47,34 @@ namespace Guide_Phasmo_plus
 
         private void Preuve_Click(object sender, EventArgs e)
         {
-            if (Color.FromKnownColor(KnownColor.ControlLight).ToArgb().Equals((sender as Control).BackColor.ToArgb()))
-            {
-                (sender as Control).BackColor = Color.FromKnownColor(KnownColor.MenuHighlight);
-                changer_couleur_btn((sender as Control).Name.Replace("_button", ""));
-            }
-            else if (Color.FromKnownColor(KnownColor.MenuHighlight).ToArgb().Equals((sender as Control).BackColor.ToArgb()))
-            {
-                (sender as Control).BackColor = Color.FromKnownColor(KnownColor.GrayText);
-                changer_couleur_btn((sender as Control).Name.Replace("_button", ""));
-            }
-            else if (Color.FromKnownColor(KnownColor.GrayText).ToArgb().Equals((sender as Control).BackColor.ToArgb()))
-            {
-                (sender as Control).BackColor = Color.FromKnownColor(KnownColor.ControlLight);
-                changer_couleur_btn((sender as Control).Name.Replace("_button", ""));
-            }
+            changer_couleur_btn_entite(sender);
+            afficher_entites_dans_liste();
         }
 
         private void Afficher_infos_entite_button_Click(object sender, EventArgs e)
         {
             string nom_du_btn = (sender as Control).Name.Replace("_button", "");
-            test_label.Text = nom_du_btn;
             afficher_attributs_entite(nom_du_btn);
+        }
+
+        private void liste_entite_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (liste_entite.SelectedItem != null)
+            {
+                afficher_attributs_entite(liste_entite.SelectedItem.ToString());
+            }
+        }
+
+        private void Reboot_button_Click(object sender, EventArgs e)
+        {
+            reboot_couleur();
+            reboot_cooldown_seuil_tips();
+            afficher_entites_dans_liste();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            credits_corentin_legoff();
         }
     }
 }

@@ -8,7 +8,6 @@ namespace Guide_Phasmo_plus
 {
     internal class Entite
     {
-        // constructor that takes no arguments:
         public Entite()
         {
             Name = "unknown";
@@ -21,7 +20,7 @@ namespace Guide_Phasmo_plus
             Dots = false;
             Spirit = false;
             Temperature = false;
-            //tips = 
+            Tips_pour_debusquer = "empty";
         }
         public string Name { get; set; }
         public int Seuil_attack { get; set; }
@@ -33,6 +32,7 @@ namespace Guide_Phasmo_plus
         public bool Dots { get; set; }
         public bool Spirit { get; set; }
         public bool Temperature { get; set; }
+        public string Tips_pour_debusquer { get; set; }
 
         public Entite(string name, int seuil_attack, int cooldown, bool ecriture, bool eMF, bool empreintes, bool orbes, bool dots, bool spirit, bool temperature)
         {
