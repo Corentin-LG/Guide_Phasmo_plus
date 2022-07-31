@@ -1186,8 +1186,8 @@ namespace Guide_Phasmo_plus
         {
             string souris_skin = "BriquetCurseur" + ".png";
             string path = AppDomain.CurrentDomain.BaseDirectory + souris_skin;
-            //return new Bitmap(new Bitmap(path), 12, 60);
-            return new Bitmap(new Bitmap(path), 6, 40);
+            return new Bitmap(new Bitmap(path), 12, 60);
+            //return new Bitmap(new Bitmap(path), 6, 40);
         }
     }
 }
